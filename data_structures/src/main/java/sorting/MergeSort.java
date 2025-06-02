@@ -47,8 +47,6 @@ public class MergeSort implements Sort {
         }
         
         // Insert sorted and merged elements back into arr
-        ptr = 0;
-        for(int j=l1; j<=u2; j++)
-            arr[j] = temp[ptr++];
+        System.arraycopy(temp,0,arr,l1,u2-l1+1);
     }
 }
